@@ -24,12 +24,12 @@
   --col6h: #195e82;
 
   /* dark blue */
-  --col7: #3A5683;
-  --col7h: #070b23;
+  --col7: #060d24;
+  --col7h: #030612;
 
   /* light blue */
-  --col8: #d6e2e3;
-  --col8h: #c5d0d1;
+  --col8: #F7F8FD;
+  --col8h: #EEF1FC;
 
   /* Cerulean */
   --col9: #45A9B3;
@@ -951,6 +951,13 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
+  text-align: right;
+  padding-right: 1em;
+}
+
+footer ul.quicklinks .list-inline-item {
+  margin-right:0;
+  margin-left: 2em;
 }
 
 ul.social-buttons {
