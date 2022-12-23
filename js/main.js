@@ -114,6 +114,7 @@ function addProjectThumbs(jsonPath, title, headline, elementId){
     }
     
     
+    
     function randomString(){
      var outString = (Math.random() + 1).toString(36).substring(7);
      return outString;
