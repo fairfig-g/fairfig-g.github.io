@@ -37,7 +37,11 @@
 
   /* very dark blue */
   --col10: #192639;
-  --col10h: #0d1624  ;
+  --col10h: #0d1624;
+
+  /* very dark blue */
+  --col11: #fff5d6;
+  --col11h: #fceec1;
   
 }
 
@@ -52,6 +56,8 @@
 body {
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.55rem;
+  position: relative;
+  min-height: 100vh;
 }
 
 h1,
@@ -937,7 +943,10 @@ header.masthead .intro-text .intro-heading {
 footer {
   padding: 15px 0;
   text-align: center;
-  background: var(--col8)
+  background: var(--col8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer span.copyright {
