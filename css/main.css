@@ -24,8 +24,21 @@
   --col6h: #195e82;
 
   /* dark blue */
-  --col7: #465277;
+  --col7: #3A5683;
   --col7h: #070b23;
+
+  /* light blue */
+  --col8: #d6e2e3;
+  --col8h: #c5d0d1;
+
+  /* Cerulean */
+  --col9: #45A9B3;
+  --col9h: #3499a2;
+
+  /* very dark blue */
+  --col10: #192639;
+  --col10h: #0d1624  ;
+  
 }
 
 
@@ -254,7 +267,7 @@ body {
 }
 
 .utility-page #mainNav {
-  background-color: var(--col3);
+  background-color: var(--col10);
 }
 
 
@@ -422,7 +435,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: var(--col3);
+    background-color: var(--col10);
   }
 
   #mainNav.navbar-shrink .navbar-brand {
@@ -922,8 +935,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 footer {
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
+  background: var(--col8)
 }
 
 footer span.copyright {
