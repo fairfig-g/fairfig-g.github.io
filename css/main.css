@@ -42,14 +42,25 @@
   /* very dark blue */
   --col11: #fff5d6;
   --col11h: #fceec1;
-  
+
 }
 
 
-.mt20{margin-top:20px;}
-.mt40{margin-top:40px;}
-.mt80{margin-top:80px;}
-.mt120{margin-top:120px;}
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt120 {
+  margin-top: 120px;
+}
 
 /* font families and typography */
 
@@ -96,7 +107,7 @@ h6 {
   font-weight: 700;
 }
 
-img#logo{
+img#logo {
   max-width: 28px;
   position: relative;
   top: -3px;
@@ -283,8 +294,8 @@ a.cta-button .fa-circle:after {
   transform: scale(0.8);
   content: '';
   position: absolute;
-  width: 166px;
-  height: 166px;
+  width: calc(var(--radius) + 10px);
+  height: calc(var(--radius) + 10px);
   background-color: transparent;
   display: block;
   border-radius: 50%;
@@ -809,15 +820,63 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
+:root {
+  --radius: 80px;
+  
+}
+
+@media (min-width: 768px) {
+  :root {
+    --radius: 86px;
+    --mLeft: 12.5px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --radius: 136px;
+    --mLeft: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --radius: 156px;
+    --mLeft: 42.5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline>li.last .fa-4x {
+    font-size: 3em;
+  }
+  .timeline .last .timeline-heading h4 {
+    margin-top: 24px;
+  }
+}
+
 .timeline>li.last .fa-stack {
-  height: 156px;
-  line-height: 156px;
-  width: 156px;
+  height: var(--radius);
+  line-height: var(--radius);
+  width: var(--radius);
 }
 
 .timeline>li.last .fa-stack-2x {
-  font-size: 156px;
+  font-size: var(--radius);
 }
+
+@media (min-width: 768px) {
+  ul.timeline>li.last>.timeline-panel {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: calc(var(--radius) + 10px);
+    position: relative;
+    margin-left: var(--mLeft);
+  }
+}
+
 
 @media (min-width: 768px) {
   .cta-about {
@@ -965,8 +1024,8 @@ footer ul.quicklinks {
 }
 
 footer ul.quicklinks .list-inline-item {
-  margin-right:0;
-  margin-left: 2em;
+  margin-right: 0;
+  margin-left: 1.25em;
 }
 
 ul.social-buttons {
