@@ -937,41 +937,6 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
-:root {
-  --radius: 80px;
-
-}
-
-@media (min-width: 768px) {
-  :root {
-    --radius: 86px;
-    --mLeft: 12.5px;
-  }
-}
-
-@media (min-width: 992px) {
-  :root {
-    --radius: 136px;
-    --mLeft: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  :root {
-    --radius: 156px;
-    --mLeft: 42.5px;
-  }
-}
-
-@media (max-width: 992px) {
-  .timeline>li.last .fa-4x {
-    font-size: 3em;
-  }
-
-  .timeline .last .timeline-heading h4 {
-    margin-top: 24px;
-  }
-}
 
 .timeline>li.last .fa-stack {
   height: var(--radius);
