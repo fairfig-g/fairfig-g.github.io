@@ -355,9 +355,17 @@ a.btn-secondary {
   border-color: var(--col1);
 }
 
+a.btn-secondary:not(:disabled):not(.disabled):active,
 a.btn-secondary:hover {
   background-color: var(--col1h);
   border-color: var(--col1h);
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus, 
+.btn-secondary.focus-visible,
+.btn-secondary:focus-visible {
+  box-shadow: 0 0 0 0.2rem rgb(108 117 125 / 10%);
 }
 
 .timeline .last .btn {
