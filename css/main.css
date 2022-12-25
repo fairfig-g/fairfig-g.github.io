@@ -1182,6 +1182,10 @@ ul.social-buttons li a:hover {
   background-color: var(--col2);
 }
 
+.profile-wrapper{
+  margin-bottom:40px
+}
+
 td.proj-title {
   max-width: 300px;
 }
