@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <base target="_top">
   <meta charset="UTF-8">
@@ -37,7 +38,6 @@
   <title>Fair Fig - Welcome!</title>
   <meta name="description" content="" />
   <link rel="canonical" href="http://fairfig.com" />
-  <script src="/js/main.js?v=1"></script>
   <link href="/css/main.css?v=1" rel="stylesheet">
 </head>
 
@@ -46,7 +46,8 @@
 <body id="page-top" class="homepage">
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
     <div class="container">
-      <a class="navbar-brand no-effect js-scroll-trigger" href="#page-top"><img id="logo" src="/images/logo.png">Fair Fig</a>
+      <a class="navbar-brand no-effect js-scroll-trigger" href="#page-top"><img id="logo" src="/images/logo.png">Fair
+        Fig</a>
       <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -57,7 +58,7 @@
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/about">About</a>
-          </li> 
+          </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="modal" href="#contactModal">Contact</a>
           </li>
@@ -100,7 +101,8 @@
                   <h5 class="subheading">What do you want to achieve?</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">You have a great new idea, or you just want to optimise something. Tell us all about it. This is where it all starts.</p>
+                  <p class="text-muted">You have a great new idea, or you just want to optimise something. Tell us all
+                    about it. This is where it all starts.</p>
                 </div>
               </div>
             </li>
@@ -128,7 +130,8 @@
                   <h5 class="subheading">You choose</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">Let's discuss together some options. Their expected results but also costs and timeframes. You choose what fits you best.</p>
+                  <p class="text-muted">Let's discuss together some options. Their expected results but also costs and
+                    timeframes. You choose what fits you best.</p>
                 </div>
               </div>
             </li>
@@ -142,25 +145,29 @@
                   <h5 class="subheading">On time, on budget.</h5>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">And we keep you informed every step of the way. Your plans have changed? We are flexible.</p>
+                  <p class="text-muted">And we keep you informed every step of the way. Your plans have changed? We are
+                    flexible.</p>
                 </div>
               </div>
             </li>
             <li class="timeline-inverted last">
               <div class="timeline-image">
                 <div class="arrow-down-right"></div>
-                <a data-toggle="modal" href="#contactModal" class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger cta-button"> <span class="add-border">Let's talk</span>                
+                <a data-toggle="modal" href="#contactModal"
+                  class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger cta-button"> <span
+                    class="add-border">Get in touch</span>
                 </a>
-              </div> 
+              </div>
             </li>
           </ul>
         </div>
 
         <div class="col-lg-12 text-center mt-4">
           <p class="text-muted mt80">
-            Want to know more? 
-          <br>
-            Contact us at <a href="mailto:hello@fairfig.com">hello@fairfig.com</a> or via <a href="https://www.linkedin.com/company/fairfig">LinkedIn</a>
+            Want to know more?
+            <br>
+            Contact us at <a href="mailto:hello@fairfig.com">hello@fairfig.com</a> or via <a
+              href="https://www.linkedin.com/company/fairfig">LinkedIn</a>
           </p>
         </div>
       </div>
@@ -178,7 +185,9 @@
             <div class="rl"></div>
           </div>
         </div>
-        <div data-tf-widget="HN7fyViQ" data-tf-opacity="100" data-tf-iframe-props="title=Contacts" data-tf-auto-focus style="width:100%;height:500px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+        <div data-tf-widget="HN7fyViQ" data-tf-opacity="100" data-tf-iframe-props="title=Contacts" data-tf-auto-focus
+          style="width:100%;height:500px;"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
       </div>
     </div>
   </div>
@@ -209,65 +218,7 @@
   </footer>
 
   <!-- Custom scripts -->
-  <script>
-    (function ($) {
-      "use strict"; // Start of use strict
-
-      // Smooth scrolling using jQuery easing
-      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: (target.offset().top - 54)
-            }, 1000, "easeInOutExpo");
-            return false;
-          }
-        }
-      });
-
-      // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').click(function () {
-        $('.navbar-collapse').collapse('hide');
-      });
-
-      // Activate scrollspy to add active class to navbar items on scroll
-      $('body').scrollspy({
-        target: '#mainNav',
-        offset: 56
-      });
-
-      // Collapse Navbar
-      var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
-          $("#mainNav").addClass("navbar-shrink");
-        } else {
-          $("#mainNav").removeClass("navbar-shrink");
-        }
-      };
-      // Collapse now if page is not at top
-      navbarCollapse();
-      // Collapse the navbar when page is scrolled
-      $(window).scroll(navbarCollapse);
-
-      // Hide navbar when modals trigger
-      $('.portfolio-modal').on('show.bs.modal', function (e) {
-        $(".navbar").addClass("d-none");
-      })
-      $('.portfolio-modal').on('hidden.bs.modal', function (e) {
-        $(".navbar").removeClass("d-none");
-      })
-
-      if (typeof pageFunction === 'function') {
-        pageFunction();
-      } else {
-        console.log('no pageFunction');
-      }
-
-    })(jQuery); // End of use strict
-
-  </script>
+  <script src="/js/main.js?v=1"></script>
 </body>
 
 </html>
